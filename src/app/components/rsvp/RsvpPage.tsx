@@ -1,5 +1,9 @@
+"use client"
+
 import axios from "axios";
 import { useForm } from "react-hook-form";
+
+
 
 interface props {
   handleDisplayRsvpOff: () => void;

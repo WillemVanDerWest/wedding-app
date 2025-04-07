@@ -14,13 +14,13 @@ interface IRsvpUsers{
 }
 
 export const DownloadCSV = ({ data, fileName } : props) => {
-  const convertToCSV = (objArray) => {
+  const convertToCSV = (objArray: Array<IRsvpUsers>) => {
     const array = typeof objArray !== 'object' ? JSON.parse(objArray) : objArray;
     let str = '';
 
     for (let i = 0; i < array.length; i++) {
       let line = '';
-      for (let index in array[i]) {
+      for (const index in array[i]) {
         if (line !== '') line += ',';
 
         line += array[i][index];
@@ -31,7 +31,7 @@ export const DownloadCSV = ({ data, fileName } : props) => {
   };
 
   const downloadCSV = () => {
-    const csvData = new Blob([convertToCSV(data)], { type: 'text/csv' });
+    const csvData = new Blob([convertToCSV(data || [])], { type: 'text/csv' });
     const csvURL = URL.createObjectURL(csvData);
     const link = document.createElement('a');
     link.href = csvURL;

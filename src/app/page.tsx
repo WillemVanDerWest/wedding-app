@@ -1,15 +1,15 @@
 "use client"
 
-import { Navbar } from "./components/navbar/navbar";
-import PageOne from "./components/landingPageComponents/content";
-import weddingPhoto from "./image/Her-By-Melli-Shayne-.jpeg"
-import PartTwo from "./components/landingPageComponents/part2";
-import winePhoto from "./image/red-wine-health-benefits-ce3be96b730b41cc82f128abb75c2395.jpg"
+// import { Navbar } from "./components/navbar/navbar";
+// import PageOne from "./components/landingPageComponents/content";
+// import weddingPhoto from "./image/Her-By-Melli-Shayne-.jpeg"
+// import PartTwo from "./components/landingPageComponents/part2";
+// import winePhoto from "./image/red-wine-health-benefits-ce3be96b730b41cc82f128abb75c2395.jpg"
 import Header from "./components/layout02/pages/header";
 import Footer from "./components/layout02/pages/footer";
 import Part01 from "./components/layout02/pages/part01";
 import Part02 from "./components/layout02/pages/part02";
-import RsvpPage from "./components/rsvp/page";
+import RsvpPage from "./components/rsvp/RsvpPage";
 import { useState } from "react";
 
 
@@ -45,23 +45,23 @@ export default function Home() {
     )
   }
 
-  function Layout01(){
-    return(
-    <div className="flex z-10">
-    <div className="bg-slate-400 w-[20%] z-0">
+  // function Layout01(){
+  //   return(
+  //   <div className="flex z-10">
+  //   <div className="bg-slate-400 w-[20%] z-0">
       
-    </div>
-    <div className="mx-auto flex">
-        <div className="">
-          <div className="">
-            <Navbar/>
-          </div>
-            <PageOne imageData={weddingPhoto}/>
-            <PartTwo imageData={winePhoto}/>
-        </div>
-    </div>
-    <div className="bg-slate-400 w-[20%] z-10"></div>
-    </div>)}
+  //   </div>
+  //   <div className="mx-auto flex">
+  //       <div className="">
+  //         <div className="">
+  //           <Navbar/>
+  //         </div>
+  //           <PageOne imageData={weddingPhoto}/>
+  //           <PartTwo imageData={winePhoto}/>
+  //       </div>
+  //   </div>
+  //   <div className="bg-slate-400 w-[20%] z-10"></div>
+  //   </div>)}
   return (
     <div>
       <Layout02/>

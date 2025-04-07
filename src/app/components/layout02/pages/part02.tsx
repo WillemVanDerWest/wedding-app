@@ -21,7 +21,7 @@ export default function Part02(){
                 <div className="pb-10 pt-8"><span className="text-2xl ">A message from the bride & grooom</span></div>
                 <div className="w-[70%]">
                     <div className="pb-5">
-                        We can't tell you how excited we are to share this important day with all of you. For us we are celebrating so much more than a wedding, but a lifelong commitment we pray will be filled with laughter, adventure & lots of love.
+                        {`We can't tell you how excited we are to share this important day with all of you. For us we are celebrating so much more than a wedding, but a lifelong commitment we pray will be filled with laughter, adventure & lots of love.`}
                     </div>
                     <div className="pb-5"> 
                         Please join us in celebration at our reception December 10th, at 5:00pm, following our intimate mountain ceremony.
