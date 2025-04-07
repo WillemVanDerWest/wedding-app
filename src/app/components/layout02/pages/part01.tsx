@@ -1,7 +1,11 @@
 'use client'
 import { useEffect, useState } from "react";
 
-export default function Part01(){
+interface props {
+    handleDisplayRsvp : ()=> void
+}
+
+export default function Part01({handleDisplayRsvp}: props){
     
         const calculateTimeLeft = () => {
           const deadline = new Date("2025-08-02T15:00:00").getTime();
@@ -30,8 +34,8 @@ export default function Part01(){
           return () => clearInterval(interval); // Cleanup on unmount
         }, []);
     return(
-        <div>
-            <div className="flex justify-center text-[1.6rem] mt-[15%]">
+        <div className="h-[100vh] flex flex-col justify-center">
+            <div className="flex justify-center text-[1.6rem]">
                 <div className="flex items-center flex-col columns-1 w-[4%]">
                     <div>{`${timeLeft.days}`}</div>
                     <div className="text-[0.6rem]">Days</div>
@@ -64,10 +68,9 @@ export default function Part01(){
                     </div>
                 </div>
             </div>
-            <div className="my-[10%] flex justify-center">
-                <a className="items-center border-[2px] py-3 px-8 rounded-full ">RSVP</a>
+            <div className="pt-16 flex justify-center">
+                <button onClick={handleDisplayRsvp} className="items-center border-[2px] py-3 px-8 rounded-full">RSVP</button>
             </div>
-            <div></div>
         </div>
     )
 }

@@ -1,5 +1,3 @@
-import { Fraunces } from "next/font/google"
-
 export default function Part02(){
     return(
         <div className="font-primary bg-green-900 flex justify-evenly w-[100%]">
