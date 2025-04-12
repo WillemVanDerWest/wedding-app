@@ -96,7 +96,7 @@ export default function AdminPage(){
             <div className="w-60 border-r-[2px] border-yellow-500">{user.email}</div>
             <div className="w-60 border-r-[2px] border-yellow-500">{user.allergens}</div>
             <div className={`text-yellow-500 border-r-[2px] w-40 border-yellow-500`}>ATTENDING</div>
-            <div className="w-20 border-r-[2px] border-yellow-500 text-red-600"></div>                
+            <div className="w-20 border-r-[2px] border-yellow-500 text-red-600"></div>
         </div>
         )
     }
