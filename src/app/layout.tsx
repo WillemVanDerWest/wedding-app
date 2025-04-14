@@ -1,11 +1,27 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bodoni_Moda, Fraunces, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const fraunces = Fraunces(
+  {
+    subsets: ['latin'],
+    variable: '--font-inner',
+    weight: "100"
+  }
+)
+
+const bodiniModa = Bodoni_Moda(
+  {
+    subsets:['latin'],
+    variable: '--font-bodiniModa',
+    weight:"400" 
+  }
+)
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -32,9 +48,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={fraunces.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-thin`}
       >
         {children}
       </body>

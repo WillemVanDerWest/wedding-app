@@ -60,7 +60,7 @@ export default function Part01({handleDisplayRsvp}: props){
                 </div>
                 <div className="flex columns-1 justify-center">
                     <div className="rounded-full bg-gray-100 text-gray-900 flex w-[30em] text-[12px] justify-around py-[15px] md:text-[1.5em]">
-                        <div className="flex text-center flex-col w-[45%]  justify-center">
+                        <div className="font-thin flex text-center flex-col w-[45%]  justify-center">
                             <div >SATURDAY</div>
                             <div >Aug 02. 2025</div>
                         </div>

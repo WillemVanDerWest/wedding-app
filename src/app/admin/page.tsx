@@ -36,10 +36,11 @@ export default function AdminPage(){
         deleted: false
     }
 
+    const url = process.env.NEXT_PUBLIC_BACKEND_URL;
     const [users, setUsers] = useState<Array<IRsvpUsers>>([rsvpUser]);
     useEffect(()=>{
         async function getUsers(){
-            await axios.get("http://localhost:8080/getAllData", {
+            await axios.get(`${url}/getAllData`, {
                 headers:{ "Access-Control-Allow-Origin": "*"}
             })
                                                     .then((res) => {
@@ -52,9 +53,9 @@ export default function AdminPage(){
     },[])
 
     async function deleteUser(user: IRsvpUsers){
-        await axios.put("http://localhost:8080/deleteUser",user);
+        await axios.put(`${url}/deleteUser`,user);
         async function getUsers(){
-            await axios.get("http://localhost:8080/getAllData", {
+            await axios.get(`${url}getAllData`, {
                 headers:{ "Access-Control-Allow-Origin": "*"}
             })
                                                     .then((res) => {
@@ -64,12 +65,6 @@ export default function AdminPage(){
         }
 
         getUsers();
-
-        // axios({
-        //     method: 'get',
-        //     url: "http://localhost:8080/deleteUser",
-        //     data: user
-        // })
 
     }
 

@@ -10,7 +10,7 @@ import Footer from "./components/layout02/pages/footer";
 import Part01 from "./components/layout02/pages/part01";
 import Part02 from "./components/layout02/pages/part02";
 import RsvpPage from "./components/rsvp/RsvpPage";
-import image01 from "@/app/image/cabousenjeanine/0050.webp"
+import image01 from "@/app/image/cabousenjeanine/0070.webp"
 import Image from "next/image";
 import { useState } from "react";
 
@@ -53,8 +53,9 @@ export default function Home() {
       </div>
     )
   }
+
   return (
-    <div className="w-full">
+    <div className="font-bodoni_Moda ">
       <Layout02/>
     </div>
   );
