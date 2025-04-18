@@ -55,7 +55,7 @@ export default function Home() {
   }
 
   return (
-    <div className="font-bodoni_Moda ">
+    <div className="font-bodoni_Moda">
       <Layout02/>
     </div>
   );
