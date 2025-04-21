@@ -1,24 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import {Fraunces, Geist, Geist_Mono } from "next/font/google";
+import  localFont from 'next/font/local'
+
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const fraunces = Fraunces(
-  {
-    subsets: ['latin'],
-    variable: '--font-inner',
-    weight: "100"
-  }
-)
 
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const fraunces = localFont({
+  src: './fonts/local/Fraunces_72pt_Soft-Light.ttf', // Path to your local file
+  variable: '--font-fraunces',
+  weight: '100',
+  display: 'swap',
+  // subsets: ['latin'] // Not needed for localFont
 });
 
 export const metadata: Metadata = {
@@ -41,10 +34,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={fraunces.className}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-thin`}
-      >
+    <html lang="en" className={fraunces.variable}>
+      <body>
         {children}
       </body>
     </html>
