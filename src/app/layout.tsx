@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Bodoni_Moda, Fraunces, Geist, Geist_Mono } from "next/font/google";
+import {Fraunces, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,13 +15,6 @@ const fraunces = Fraunces(
   }
 )
 
-const bodiniModa = Bodoni_Moda(
-  {
-    subsets:['latin'],
-    variable: '--font-bodiniModa',
-    weight:"400" 
-  }
-)
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",

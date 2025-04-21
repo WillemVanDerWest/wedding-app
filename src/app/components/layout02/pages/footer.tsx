@@ -1,5 +1,11 @@
+import Link from "next/link"
 
-export default function Footer(){
+interface IShowDetails{
+    showDetailsButton: boolean
+}
+
+
+export default function Footer({showDetailsButton}: IShowDetails){
     return(
         <div className="w-full min-h-[400px] flex flex-col mt-auto bg-[#332D2B] justify-center">
             <div className="flex justify-evenly">
@@ -20,12 +26,18 @@ export default function Footer(){
                             </a>
                     </div>
                 </div>
-                <div className=" w-1/3 flex flex-col items-center ">
-                    <button className="border-solid border-gray-800 border-2 px-12 py-4 text-2xl rounded-full">
+                <div className=" w-1/3 flex flex-col items-center justify-center ">
+
+                {showDetailsButton? 
+                    <Link href="" className="border-solid border-gray-100 border-2 px-12 py-4 text-2xl rounded-full">
                         Details
-                    </button>
+                    </Link>  
+                    :
+                    <Link href="/" className="border-solid border-gray-100 border-2 px-12 py-4 text-2xl rounded-full">
+                        Home
+                    </Link>}
                 </div>
-                <div className="justify-center items-center flex flex-col w-1/3">
+                {/* <div className="justify-center items-center flex flex-col w-1/3">
                     <div className="object-left">
                         <h2 className="text-3xl">
                             Menu
@@ -35,7 +47,7 @@ export default function Footer(){
                             <li><button className="underline">Registry</button></li>
                         </ul>
                     </div> 
-                </div>
+                </div> */}
             </div>
         </div>
     )

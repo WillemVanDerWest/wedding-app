@@ -5,9 +5,9 @@ import WhereToGoStay from "./components/whereToGoStay";
 export default function WhereToStay(){
     return(
         <div className="font-bodoni_Moda">
-            <Header/>
+            <Header showDetailsButton={false}/>
                 <WhereToGoStay/>
-            <Footer/>
+            <Footer showDetailsButton={false}/>
         </div>
     )
 }

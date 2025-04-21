@@ -50,7 +50,7 @@ export default function AdminPage(){
         }
 
         getUsers();
-    },[])
+    },[url])
 
     async function deleteUser(user: IRsvpUsers){
         await axios.put(`${url}/deleteUser`,user);
@@ -65,6 +65,8 @@ export default function AdminPage(){
         }
 
         getUsers();
+
+
 
     }
 
@@ -105,18 +107,12 @@ export default function AdminPage(){
         
     })
 
-    const navbarItems= ["Dashboard", "Home Page", "Users"];
-    const sideNavbar = navbarItems.map((item)=>{
-        return(
-            <div  className="hover:bg-slate-500 py-2 pl-3 font-bold" key={item}>{item}</div>
-        )
-    })
+
 
 
     return(
         <div className="flex bg-slate-100">
             <div className="flex-col w-[200px] h-screen bg-gray-600">
-                {sideNavbar}
             </div>
             <div>
                 <div className="font-semibold bg-slate-600 text-2xl">

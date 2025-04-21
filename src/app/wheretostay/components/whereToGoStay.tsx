@@ -85,7 +85,7 @@ export default function WhereToGoStay(){
 
     const renderLocations = locations.map((location, index)=>{
         return(
-            <div key={index} className="bg-gray-300  h-[500px] m-3">
+            <div key={index} className="bg-orange-100  h-[500px] m-3">
                 <div className="flex-col flex">
                     <div className="flex-col flex items-center">
                     <iframe src={location.mapLink} width="350" height="300" loading="lazy"/>
@@ -102,10 +102,10 @@ export default function WhereToGoStay(){
         )
     })
     return(
-        <div className="py-32 bg-gray-600 text-gray-700 ">
+        <div className="py-32 bg-orange-200 text-gray-700 ">
             <div className=" flex flex-col items-center justify-center">
                 <div className="justify-center items-center flex-col flex">
-                    <h2 className="pb-10 text-[3em] sm:text-[5em] text-gray-50">Where to Stay</h2>
+                    <h2 className="pb-10 text-[3em] sm:text-[5em] text-gray-700">Where to Stay</h2>
                 </div>
                 <div className="flex flex-wrap justify-center items-center w-[400px] md:w-[850px] xl:w-[1350px]">
                     {renderLocations}
