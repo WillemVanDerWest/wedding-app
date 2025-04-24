@@ -13,7 +13,7 @@ export default function WeddingDetails(){
                                 <div className="text-lg  mx-auto">
                                     <div className="text-2xl font-medium pb-2">DATE</div>
                                     <div>August 2nd, 2025</div>
-                                    <div>At 15:00pm</div>
+                                    <div>At 14:30 - 15:00</div>
                                 </div>
                                 <div className="text-lg">
                                     <div className="text-2xl font-medium pb-2 pt-5">RECEPTION LOCATION</div>
@@ -28,7 +28,22 @@ export default function WeddingDetails(){
                                 <div className="text-lg">
                                     <div className="text-2xl font-medium pb-2 pt-5">DRESS</div>
                                     <div>Semi - Formal</div>
-                            </div>
+                                </div>
+
+                                <div className="text-lg pb-2 pt-5">
+                                    <div>Outside ceremony subject to weather on the day.</div>
+                                </div>
+
+                                <div className="text-lg">
+                                    <div className="text-2xl font-medium pb-2 pt-5">BAR</div>
+                                    <div>Cash & Card</div>
+                                </div>
+
+                                <div className="text-lg">
+                                    <div className="text-2xl font-medium pb-2 pt-5">Hashtag</div>
+                                    <div>#trounienetvirGeldEnHuys</div>
+                                </div>
+
                         </div>
                     </div>
                 </section>

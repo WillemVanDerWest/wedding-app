@@ -27,8 +27,8 @@ export default function Home() {
     }
     const isRsvpButtonClicked = ()=>{
       return(
-        <div className="rounded-md backdrop-blur-lg p-5 flex fixed  bg-white/20 top-[200px] left-0 right-0 z-50">
-          <div className="w-full mx-auto my-0 max-w-[900px]">
+        <div className="rounded-md   flex flex-col fixed left-0 right-0 z-50 top-[100px]">
+          <div className="mx-auto my-0 backdrop-blur-lg justify-center items-center  bg-white/20 rounded-lg p-5 w-5/6 sm:w-5/6 md:w-3/5 lg:px-20 lg:w-4/5 xl:w-2/5">
             <RsvpPage handleDisplayRsvpOff={handleDisplayRsvpOff}/>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
 
     //handle target ref
     return(
-      <div className="flex flex-col text-white">
+      <div className="flex flex-col text-white font-fraunces font-semibold">
           <div className="z-10">
             <Header scrollToSection={scrollToSection} showDetailsButton={true}/>
           </div>
@@ -81,7 +81,7 @@ export default function Home() {
   }
 
   return (
-    <div className="font-bodoni_Moda">
+    <div className="">
       <Layout02/>
     </div>
   );

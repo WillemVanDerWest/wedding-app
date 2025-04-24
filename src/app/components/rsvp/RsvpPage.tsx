@@ -29,9 +29,6 @@ export default function RsvpPage({ handleDisplayRsvpOff }: props) {
   const url: string = process.env.NEXT_PUBLIC_BACKEND_URL ? process.env.NEXT_PUBLIC_BACKEND_URL : '';
   const { register, handleSubmit } = useForm<formData>();
   const postUser = (prop : formData)=> {
-
-    
-
     const correctFormData: correctFormData = {
       name: prop.name,
       surname: prop.surname,
@@ -39,12 +36,9 @@ export default function RsvpPage({ handleDisplayRsvpOff }: props) {
       email: prop.email,
       allergens: prop.allergens
     }
-
-
         axios.post(`${url}/addUser`, correctFormData)
-            .then((response)=>{
-                console.log(response)
-                alert(JSON.stringify(response.data))
+            .then(()=>{
+                alert(`Baie dankie dat jy die tyd gevat het om te RSVP.`)
             })
   }
   return (

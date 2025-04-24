@@ -17,19 +17,11 @@ export default function Header({scrollToSection, showDetailsButton} : IScrollVoi
                         <div className="absolute ">C</div>
                         <div className="absolute left-4 top-2">J</div>
                 </div>
-                <div className=" flex">
-                    <div  className="px-5 py-3 border-solid border-5">
+                <div className="flex">
+                    <div className="py-3 border-solid border-5">
                         {showDetailsButton ? 
-                        <a className="border-solid border-gray-800 border-2 px-2 py-3 text-[12px] rounded-full" onClick={scrollToSection}>Details</a> 
-                        :  <Link className="border-solid border-gray-800 border-2 px-2 py-3 text-[12px] rounded-full" href="/">Home</Link>}
-                    </div>
-                    
-                    <div>
-                        <div  className="m-0 flex-col">
-                            <div className="border-b-[1px] w-[2em] border-black pt-3"/>
-                            <div className="border-b-[1px] w-[2em] border-black pt-3"/>
-                            <div className="border-b-[1px] w-[2em] border-black pt-3"/>
-                        </div>
+                        <a className="border-solid border-gray-600 border-[1.5px] px-2 py-2 text-[12px] rounded-full font-bold" onClick={scrollToSection}>Details</a> 
+                        :  <Link className="border-solid border-gray-600 border-[1.5px] px-2 py-2 text-[12px] rounded-full font-bold" href="/">Home</Link>}
                     </div>
                 </div>
             </section>

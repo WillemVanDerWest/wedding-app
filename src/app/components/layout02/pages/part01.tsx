@@ -55,12 +55,12 @@ export default function Part01({handleDisplayRsvp}: props){
                         <div className="text-[0.6rem]">Secs</div>
                     </div>
                 </div>
-                <div className="flex justify-center text-[40px] py-[2em] sm:text-[4rem] md:text-[6rem] lg:text-[8rem]">
+                <div className="flex justify-center text-[55px] py-[10rem] sm:text-[6rem] md:text-[6rem] lg:text-[8@rem] xl:text-[10rem] font-brittany font-light">
                     Cabous & Jeanine
                 </div>
                 <div className="flex columns-1 justify-center">
                     <div className="rounded-full bg-gray-100 text-gray-900 flex w-[30em] text-[12px] justify-around py-[15px] md:text-[1.5em]">
-                        <div className="font-thin flex text-center flex-col w-[45%]  justify-center">
+                        <div className="flex text-center flex-col w-[45%]  justify-center">
                             <div >SATURDAY</div>
                             <div >Aug 02. 2025</div>
                         </div>

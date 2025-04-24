@@ -90,8 +90,8 @@ export default function WhereToGoStay(){
                     <div className="flex-col flex items-center">
                     <iframe src={location.mapLink} width="350" height="300" loading="lazy"/>
                     </div>
-                    <div className="pl-4 pt-2">
-                        <h2 className=" text-[1.8em]">{location.name}</h2>
+                    <div className="pl-4 pt-2 font-semibold">
+                        <h2 className=" text-[25px] font-bold">{location.name}</h2>
                         <h2>{location.contact}</h2>
                         <h2>{location.distance}</h2>
                         <h2>{location.email}</h2>

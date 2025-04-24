@@ -13,7 +13,10 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily:{
-        bodoni_Moda : ['var']
+        bodoni_Moda : [`var(--font-bodoniModa)`],
+        fraunces : [`var(--font-fraunces)`],
+        custom : [`BrittanySignature`, 'sans-serif'],
+        brittany : [`var(--font-brittany)`]
       }
     },
   },
