@@ -23,7 +23,7 @@ export default function BrideMessage(){
                         {`'n Eerste date toe by 'n dodgy kuierplek, en n tweede date by Pikkewynstraat - waar die polisie ons mos sou verdink van " suspicious acitivities"  en die bakkie ligtelik met n flitslig deursoek, 11 uur die oggend van alle tye.  `} 
                     </div>
                     <div className="pb-5">
-                        {`Vier jaar later - en ons is verloof... Die verlowing het hoeka gebeur by Pikkewyn straat - gelukkig geen polisie die keur nie."`}
+                        {`Vier jaar later - en ons is verloof... Die verlowing het hoeka gebeur by Pikkewyn straat - gelukkig geen polisie die keer nie."`}
                     </div>
                     <div className="italic font-bold">
                         Cabous & Jeanine
