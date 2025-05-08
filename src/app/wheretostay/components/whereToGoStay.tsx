@@ -20,7 +20,7 @@ export default function WhereToGoStay(){
             name: 'Kuungana Bush Lodge',
             distance: '400m',
             mapLink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.058756353387!2d28.481615576325193!3d-25.768622746377787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955b6dc80dd5eb%3A0x4c6e22db5f2d91e6!2sKuungana%20Bush%20Lodge!5e0!3m2!1sen!2sza!4v1744984370397!5m2!1sen!2sza',
-            contact: '082 929 4977',
+            contact: '082 043 2726',
             email: 'reservations@kuunganabushlodge.co.za'
         },
         {
