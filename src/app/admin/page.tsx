@@ -77,7 +77,7 @@ export default function AdminPage(){
         <div className="flex hover:bg-slate-600 hover:text-white text-yellow-900 font-bold border-yellow-500 border-[1px] rounded-full mt-2" key={`${user.date?.getMilliseconds ? user.date?.getMilliseconds : "undefined"}`}>
             <div className="pl-2 w-40 border-r-[2px] border-yellow-500">{user.name}</div>
             <div className="w-40 border-r-[2px] border-yellow-500">{user.surname}</div>
-            <div className="w-40 border-r-[2px] border-yellow-500">{`${user.date?.getDay ? user.date.getDay: "undefined"}`}</div>
+            {/* <div className="w-40 border-r-[2px] border-yellow-500">{`${user.date?.getDay ? user.date.getDay: "undefined"}`}</div> */}
             <div className="w-60 border-r-[2px] border-yellow-500">{user.email}</div>
             <div className="w-60 border-r-[2px] border-yellow-500">{user.allergens}</div>
             <div className={user.attending === true ? `text-green-500 border-r-[2px] w-40 border-yellow-500` :` text-red-600 border-r-[2px] w-40 border-yellow-500`}>{user.attending? `Yes`: `No`}</div>
@@ -91,7 +91,7 @@ export default function AdminPage(){
         <div className="flex hover:bg-slate-600 text-yellow-500 border-yellow-500 border-b-[2px]" key={`${user.date?.getMilliseconds ? user.date?.getMilliseconds : "undefined"}`}>
             <div className="w-40 border-r-[2px] border-yellow-500">{user.name}</div>
             <div className="w-40 border-r-[2px] border-yellow-500">{user.surname}</div>
-            <div className="w-40 border-r-[2px] border-yellow-500">DATE</div>
+            {/* <div className="w-40 border-r-[2px] border-yellow-500">DATE</div> */}
             <div className="w-60 border-r-[2px] border-yellow-500">{user.email}</div>
             <div className="w-60 border-r-[2px] border-yellow-500">{user.allergens}</div>
             <div className={`text-yellow-500 border-r-[2px] w-40 border-yellow-500`}>ATTENDING</div>
